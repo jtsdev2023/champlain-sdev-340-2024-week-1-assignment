@@ -1,12 +1,5 @@
-#include <string>
-#include <iostream>
 #include "week-1-assignment-class-user-cli.cpp"
 #include "week-1-assignment-class-math-library.cpp"
-
-
-using namespace std;
-
-
 
 int main() {
     
