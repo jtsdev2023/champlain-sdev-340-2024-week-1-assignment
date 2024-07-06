@@ -1,9 +1,9 @@
 #include "week-1-assignment-class-user-cli.h"
 
 
-vector <int> UserCLI::splitString(const string& userInputString, char delimiterCharacter)
+vector <double> UserCLI::splitString(const string& userInputString, char delimiterCharacter)
 {
-    vector<int> userInputVector;
+    vector <double> userInputVector;
     stringstream userInputStringStream(userInputString);
     string userInputItem;
 
@@ -16,7 +16,7 @@ vector <int> UserCLI::splitString(const string& userInputString, char delimiterC
 
 }
 
-vector <int> UserCLI::getUserInput()
+vector <double> UserCLI::getUserInput()
 {
     string userInputMessage = "Enter a List of Numbers Separated by Space:";
     cout << userInputMessage << endl;
@@ -24,12 +24,12 @@ vector <int> UserCLI::getUserInput()
     string userInput;
     getline(cin, userInput);
 
-    vector<int> userInputNumbers = splitString(userInput);
+    vector <double> userInputNumbers = splitString(userInput);
 
     return userInputNumbers;
 }
 
-void UserCLI::printUserInputVector(vector <int> userInputNumbers)
+void UserCLI::prdoubleUserInputVector(vector <double> userInputNumbers)
 {
     cout << "You Entered: ";
 

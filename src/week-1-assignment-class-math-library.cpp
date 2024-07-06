@@ -1,21 +1,42 @@
 #include "week-1-assignment-class-math-library.h"
 
-int MathLibrary::Average(int a, int b)
+double MathLibrary::myAverage(vector <double> inputNumbers)
 {
-    return (a + b) / 2;
+    double sum = 0.0;
+    for (const auto& item : inputNumbers)
+    {
+        sum += item;
+    }
+
+    return sum / inputNumbers.size();
 }
 
-int MathLibrary::Variance(int a, int b)
+void MathLibrary::myDeviance(vector <double> inputNumbers, double average)
 {
-    return (a - b) * (a - b);
+
+    double deviance = 0.0;
+    tuple <double, double, double> devianceTuple;
+
+    for (const auto& item : inputNumbers)
+    {
+        deviance = pow(item - average, 2);
+
+        devianceTuple = make_tuple(item, average, deviance);
+    }
+
 }
 
-int MathLibrary::StandardDeviation(int a, int b)
+void MathLibrary::myVariance()
 {
-    return sqrt(Variance(a, b));
+    
 }
 
-int MathLibrary::Range(int a, int b)
+void MathLibrary::myStandardDeviation()
 {
-    return a - b;
+   
+}
+
+double MathLibrary::myRange(vector <double> inputNumbers)
+{
+    
 }
