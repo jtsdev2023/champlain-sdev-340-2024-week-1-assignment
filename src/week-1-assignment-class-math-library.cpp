@@ -20,25 +20,51 @@ double MathLibrary::myAverage(vector <double> inputNumbers)
     return sum / inputNumbers.size();
 }
 
-void MathLibrary::myDeviance(vector <double> inputNumbers, double average)
-{
+// vector <tuple <double, double>> MathLibrary::myDeviance(
+//     vector <double> inputNumbers, double average)
+// {
 
+//     double deviance = 0.0;
+//     tuple <double, double> devianceTuple;
+
+//     for (const auto& item : inputNumbers)
+//     {
+//         deviance = pow(item - average, 2);
+//         devianceTuple = make_tuple(item, deviance);
+//         myDevianceVector.push_back(devianceTuple);
+//     }
+
+//     return myDevianceVector;
+// }
+
+vector <double> MathLibrary::myDeviance(vector <double> inputNumbers, double average)
+{
     double deviance = 0.0;
-    tuple <double, double, double> devianceTuple;
+    vector <double> myDevianceVector;
 
     for (const auto& item : inputNumbers)
     {
         deviance = pow(item - average, 2);
-
-        devianceTuple = make_tuple(item, average, deviance);
+        myDevianceVector.push_back(deviance);
     }
 
+    return myDevianceVector;
 }
 
-void MathLibrary::myVariance()
+double MathLibrary::myVariance(vector <double> inputNumbers)
 {
-    
+    double variance = 0.0;
+    double sum = 0.0;
+    vector <double> myDevianceVector;
+
+    double average = myAverage(inputNumbers);
+    myDevianceVector = myDeviance(inputNumbers, average);
+    variance = myAverage(myDevianceVector);
+
+    return variance;
 }
+
+
 
 void MathLibrary::myStandardDeviation()
 {

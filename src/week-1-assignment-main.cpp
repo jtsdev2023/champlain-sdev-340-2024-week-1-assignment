@@ -18,5 +18,7 @@ int main() {
     cout << "Average: " << test2.myAverage(r) << endl;
     cout << "Range: " << test2.myRange(r) << endl;
 
+    cout << "Variance: " << test2.myVariance(r) << endl;
+
     return 0;
 }

@@ -10,14 +10,19 @@ using namespace std;
 class MathLibrary
 {
     private:
-        void myDeviance(vector <double> inputNumbers, double average);
+        // vector <tuple <double, double>> myDevianceVector;
+        // vector <tuple <double, double>> myDeviance(vector <double> inputNumbers, double average);
+        
+        vector <double> myDeviance(vector <double> inputNumbers, double average);
 
     public:
         double myRange(vector <double> inputNumbers);
-
         double myAverage(vector <double> inputNumbers);
 
-        void myVariance();
+        double myVariance(vector <double> inputNumbers);
 
         void myStandardDeviation();
+        
+        // vector <tuple <double, double>> myDeviance(vector <double> inputNumbers, double average);
+
 };
