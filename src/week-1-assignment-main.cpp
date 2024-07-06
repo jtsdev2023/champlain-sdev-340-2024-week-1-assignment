@@ -14,11 +14,11 @@ int main() {
     vector <double> r = test1.getUserInput();
     test1.printUserInputVector(r);
 
-    MathLibrary test2;
+    MathLibrary test2(r);
     cout << "Average: " << test2.myAverage(r) << endl;
-    cout << "Range: " << test2.myRange(r) << endl;
+    cout << "Range: " << test2.myRange() << endl;
 
-    cout << "Variance: " << test2.myVariance(r) << endl;
+    cout << "Variance: " << test2.myVariance() << endl;
 
     return 0;
 }
