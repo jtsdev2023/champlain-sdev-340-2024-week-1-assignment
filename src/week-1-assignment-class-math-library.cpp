@@ -2,7 +2,7 @@
 
 double MathLibrary::myRange(vector <double> inputNumbers)
 {
-    double myMinMax = minmax_element(inputNumbers.begin(), inputNumbers.end());
+    auto myMinMax = minmax_element(inputNumbers.begin(), inputNumbers.end());
 
     double range = *myMinMax.second - *myMinMax.first;
 
