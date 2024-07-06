@@ -1,5 +1,14 @@
 #include "week-1-assignment-class-math-library.h"
 
+double MathLibrary::myRange(vector <double> inputNumbers)
+{
+    double myMinMax = minmax_element(inputNumbers.begin(), inputNumbers.end());
+
+    double range = *myMinMax.second - *myMinMax.first;
+
+    return range;
+}
+
 double MathLibrary::myAverage(vector <double> inputNumbers)
 {
     double sum = 0.0;
@@ -36,7 +45,4 @@ void MathLibrary::myStandardDeviation()
    
 }
 
-double MathLibrary::myRange(vector <double> inputNumbers)
-{
-    
-}
+

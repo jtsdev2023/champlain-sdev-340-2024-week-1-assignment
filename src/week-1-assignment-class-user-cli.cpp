@@ -29,7 +29,7 @@ vector <double> UserCLI::getUserInput()
     return userInputNumbers;
 }
 
-void UserCLI::prdoubleUserInputVector(vector <double> userInputNumbers)
+void UserCLI::printUserInputVector(vector <double> userInputNumbers)
 {
     cout << "You Entered: ";
 

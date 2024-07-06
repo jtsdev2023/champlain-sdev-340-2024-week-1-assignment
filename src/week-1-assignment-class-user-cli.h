@@ -12,5 +12,5 @@ class UserCLI
      public:
         vector <double> splitString(const string& userInputString, char delimiterCharacter = ' ');
         vector <double> getUserInput();
-        void prdoubleUserInputVector(vector <double> userInputNumbers);
+        void printUserInputVector(vector <double> userInputNumbers);
 };
