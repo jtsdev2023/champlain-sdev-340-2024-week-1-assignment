@@ -1,3 +1,12 @@
+/**
+ * File: week-1-assignment-class-math-library.h
+ * Author: Jeremy Sizemore
+ * Date: July 3, 2024
+ * Course: SDEV-340
+ * 
+ * Description: This file contains the MathLibrary class definition.
+ */
+
 #include <tuple>
 #include <cmath>
 #include <vector>

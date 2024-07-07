@@ -1,4 +1,13 @@
-#include "week-1-assignment-class-user-cli.h"
+/**
+ * File: week-1-assignment-class-user-cli.cpp
+ * Author: Jeremy Sizemore
+ * Date: July 3, 2024
+ * Course: SDEV-340
+ * 
+ * Description: This file is the implementation of the UserCLI class.
+ */
+
+#include "../include/week-1-assignment-class-user-cli.h"
 
 
 vector <double> UserCLI::splitString(const string& userInputString, char delimiterCharacter)

@@ -1,4 +1,14 @@
-#include "week-1-assignment-class-math-library.h"
+/**
+ * File: week-1-assignment-class-math-library.cpp
+ * Author: Jeremy Sizemore
+ * Date: July 3, 2024
+ * Course: SDEV-340
+ * 
+ * Description: This file is the implementation of the MathLibrary class.
+ */
+
+#include "../include/week-1-assignment-class-math-library.h"
+
 
 double MathLibrary::myRange()
 {
