@@ -11,15 +11,17 @@
  * Git: https://github.com/jtsdev2023/champlain-sdev-340-2024-week-1-assignment.git
  */
 
+#include <memory>
 #include "week-1-assignment-class-user-cli.cpp"
 #include "week-1-assignment-class-math-library.cpp"
 
-#include <memory>
+using namespace std;
 
 int main() {
     
     // use a smart pointer
-    std::unique_ptr<std::vector<double>> r = std::make_unique<std::vector<double>>();
+    // used stackoverflow to figure out how to use a smart pointer
+    std::unique_ptr<vector<double>> r = make_unique<vector<double>>();
     
     // initialize the UserCLI class and get user input
     UserCLI user01;

@@ -12,10 +12,13 @@
 
 vector <double> UserCLI::splitString(const string& userInputString, char delimiterCharacter)
 {
+    // method to split to split string, convert it to integers, and store it in a vector
+    // used stackoverflow to figure out how to get user input and split it in c++
     vector <double> userInputVector;
     stringstream userInputStringStream(userInputString);
     string userInputItem;
 
+    // while loop get user input and add it to vector
     while (getline(userInputStringStream, userInputItem, delimiterCharacter))
     {
         userInputVector.push_back(stoi(userInputItem));
@@ -27,12 +30,14 @@ vector <double> UserCLI::splitString(const string& userInputString, char delimit
 
 vector <double> UserCLI::getUserInput()
 {
+    // method to get user input
     string userInputMessage = "Enter a List of Numbers Separated by Space:";
     cout << userInputMessage << endl;
 
     string userInput;
     getline(cin, userInput);
 
+    // used stackoverflow to figure out how to split a string in c++
     vector <double> userInputNumbers = splitString(userInput);
 
     return userInputNumbers;
@@ -40,8 +45,10 @@ vector <double> UserCLI::getUserInput()
 
 void UserCLI::printUserInputVector(vector <double> userInputNumbers)
 {
+    // method to print out user input
     cout << "You Entered: ";
 
+    // for loop to print out user input
     for (const auto& item : userInputNumbers)
     {
         cout << item << " ";
